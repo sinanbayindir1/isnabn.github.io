@@ -1,3 +1,69 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://isnabn.github.io'
+theme = 'paper'
+title = 'Sinan Bayindir'
+languageCode = 'en-gb'
+DefaultContentLanguage = 'en-gb'
+
+ignoreErrors = '"error-remote-getjson'
+
+[params]
+avatar = 'isnabn@pm.me'
+name = 'Sinan Bayindir'
+bio = 'Veritas lux mea.'
+monoDarkIcon = true
+color = 'linen'
+
+twitter = 'isnabn'
+github = 'isnabn'
+mastodon = 'isnabn'
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
